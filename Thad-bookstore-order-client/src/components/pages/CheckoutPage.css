@@ -1,0 +1,54 @@
+/* TODO: Adapt these styles to your page */
+.checkout-page {
+    /* text-align: center; */
+}
+.checkout-page-body {
+display: flex;
+padding: 1em;
+justify-content: center;
+}
+.checkout-page form {
+display: flex;
+flex-direction: column;
+}
+.checkout-page-form-and-details {
+display: flex;
+flex-direction: column;
+}
+.checkout-page form > div {
+display: flex;
+justify-content: flex-end;
+margin-bottom: 0.2em;
+}
+.checkout-page form > div > input,
+.checkout-page form > div > select {
+background-color: #666666;
+margin-left: 0.5em;
+}
+.checkout-page form > .error {
+color: red;
+text-align: right;
+}
+.checkout-page form > button:disabled {
+background-color: #666666;
+color: #999999;
+border-color: #999999;
+}
+.checkout-page .checkout-details {
+margin-top: 0.5em;
+}
+.checkout-page .checkoutStatusBox {
+margin: 1em;
+padding: 1em;
+text-align: center;
+/* background-image: url(`${import.meta.env.BASE_URL}/site-images/booksale.png`); */
+}
+.checkout-field-error {
+color: red;
+text-align: right;
+font-size: smaller;
+margin-left: 1em;
+}
+.checkoutbg {
+    margin-left: 2em;
+}

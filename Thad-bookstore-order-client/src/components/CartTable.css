@@ -1,0 +1,205 @@
+.cart-table {
+  display: grid;
+
+  margin: 0 auto;
+
+  width: fit-content;
+
+  background-color: aliceblue;
+
+  grid-template-columns: max-content minmax(10em, 20em) repeat(3, max-content);
+
+  row-gap: 1em;
+}
+
+.cart2 {
+  display: contents;
+}
+
+.cart2 > li {
+  display: contents;
+}
+
+.table-heading {
+  background-color: #333;
+
+  color: white;
+}
+
+.table-heading > * {
+  padding: 0.5em;
+
+  background-color: #333;
+}
+
+.heading-book {
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.heading-price {
+  text-align: center;
+
+  grid-column: 3 / 4;
+}
+.heading-quantity {
+  text-align: center;
+
+  grid-column: 4 / 5;
+}
+
+.heading-subtotal {
+  text-align: center;
+
+  grid-column: -2 / -1;
+}
+
+.cart-book-image {
+  padding: 0 1em;
+}
+
+.cart-book-image > * {
+  margin-right: 0;
+
+  margin-left: auto;
+}
+
+.cart2 img {
+  display: block;
+
+  width: 70px;
+
+  height: auto;
+}
+
+.rect {
+  background-color: var(--primary-color-dark);
+}
+
+.narrow-rect {
+  width: 75px;
+
+  height: 100px;
+}
+
+.square {
+  width: 100px;
+
+  height: 100px;
+}
+
+.wide-rect {
+  width: 125px;
+
+  height: 100px;
+}
+
+.cart-book-title {
+  padding-top: 2.5em;
+}
+
+.cart-book-price {
+  padding-left: 1em;
+  padding-top: 2.5em;
+  text-align: right;
+}
+
+.cart-book-quantity {
+  padding-right: 1em;
+  padding-top: 2.5em;
+  padding-left: 1em;
+}
+
+.cart-book-subtotal {
+  padding-right: 1em;
+  padding-top: 2.5em;
+  padding-left: 1em;
+
+  text-align: right;
+}
+
+.cart-book-total {
+  padding-right: 1em;
+  padding-left: 1em;
+
+  text-align: right;
+}
+
+.cart-clear-icon {
+  /* padding-left: 90%; */
+  /* float: right; */
+  text-align: right;
+  grid-column: -2 / -1;
+}
+/* Row separators in the table */
+
+.line-sep {
+  display: block;
+
+  height: 2px;
+
+  background-color: gray;
+
+  grid-column: 1 / -1;
+}
+
+/* Increment/decrement buttons */
+
+.icon-button {
+  border: none;
+
+  cursor: pointer;
+}
+
+.inc-button {
+  margin-right: 0.25em;
+
+  color: var(--primary-color);
+
+  font-size: 1.125rem;
+}
+
+.inc-button:hover {
+  color: var(--primary-color-dark);
+}
+
+.dec-button {
+  color: #ccc;
+
+  font-size: 1.125rem;
+}
+
+.dec-button:hover {
+  color: #aaa;
+}
+
+/* Chevron buttons */
+
+.dec-arrow-button,
+.inc-arrow-button {
+  color: var(--primary-color);
+
+  font-size: 1rem;
+}
+
+.dec-arrow-button:hover,
+.inc-arrow-button:hover {
+  color: var(--primary-color-dark);
+}
+
+input[type="number"] {
+  width: 4em;
+}
+
+select {
+  border: 2px solid var(--primary-color-dark);
+
+  border-radius: 3px;
+
+  background-color: var(--primary-color);
+
+  color: white;
+}
+.row-line {
+  border-bottom: 1px solid black;
+}

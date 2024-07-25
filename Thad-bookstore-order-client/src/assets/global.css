@@ -1,0 +1,452 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* CUSTOM PROPERTIES */
+
+/*
+  The :root selector matches the document's root element.
+  In HTML, the root element is always html. By convention,
+  custom properties are always defined in :root (not in html).
+*/
+:root {
+  --title-font-family: "Lato", sans-serif;
+  --default-font-family: "Lato", sans-serif;
+  /* 
+    16px is the default font size set by browswers in the html tag.
+    This should never be changed so that vision-impared users can override it.
+    Therefore, 1rem (root em) is the width of an em-dash at 16px.
+    If you want a differnt default size for your site, change it in the body tag.
+    For example, if you want 20px, then set the size to 20/16 = 1.25rem.
+  */
+  --defatul-font-size: 1.25rem;
+  --default-text-color: #111;
+  --neutral-color: #4e4e4e;
+
+  --primary-color: dodgerblue;
+  --primary-color-dark: darkblue;
+  --primary-background-color: #fff;
+  --secondary-background-color: #F5F5F5;
+  --card-background-color: navajowhite;
+}
+
+/* RESET */
+
+/*
+  In CSS, margins can be a pain to work with. One of the reasons for this
+  is that top and bottom margins collapse into one another. For example,
+  if you have one paragraph following another and they both have top
+  and bottom margins of 1em, the space between them will be... 1em.
+  It will not be 2em as you might think. To get around this odd behavior,
+  many developers choose to set all margins on paragrph elements to 0
+  and fix problems as they arise.  
+*/
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* For large text sizes, you typically want to decrease your line height. */
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+h2 {
+  font-size: 35px;
+  color: #E27B00;
+}
+
+/* For small text sizes, you typically want to increase your line height. */
+p {
+  line-height: 1.5;
+}
+
+/* Get rid of styling (numbers, bullets, and spacing) for lists. */
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+  By default, a width refers to the width of the content box.
+  This causes unexpected behavior in many situations. The following
+  rull makes width refer to the width of the border box.
+  See the box model (content/padding/border/margin) for details.
+*/
+* {
+  box-sizing: border-box;
+}
+
+/*
+  This rule ensures that all images stretch to fit the width
+  of the parent element, and all images start on a new line.
+  A height of auto will ensure the aspect ratio is preserved.
+*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*
+  In general, font properties of elements are inherited from
+  the parent element, and layout properties of elements are NOT inherited
+  from the parent element. An exception to this convention involves elements
+  that are associated with forms (like button and input). This rule fixes
+  that oversight in the CSS specification, and ensures that form elements
+  also inherit font properties from their parent element.
+
+  For details, see https://www.youtube.com/watch?v=qKiz9gdJdr8&t=49s.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* UTILITY CLASSES */
+
+/*
+  When you get rid of margins, everything is crammed together. For example,
+  paragraphs will have no space between them, which is NOT good design.
+  The following utility class gives a top margin of 1.25rem (20px)
+  to all children inside a parent with class .flow-content,
+  EXCEPT for the first child, which will NOT get a margin.
+  That's because "elem + elem" means that the rule should be applied
+  to the first elem only when it is followed by another elem.
+*/
+.flow-content>*+* {
+  margin-top: 1rem;
+}
+
+/*
+  Giving various sections of your page this utility class
+  will ensure a nice padding around the contents.
+*/
+.container {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: auto;
+  width: 100%;
+}
+
+/*
+  Sometimes it's nice to have a section where the foreground
+  and background colors are (more-or-less) flipped for contrast.
+  This utility class does that.
+*/
+.dark-background {
+  background-color: var(--neutral-color);
+  color: whitesmoke;
+}
+
+/* LAYOUT */
+
+/* These global font properties with be inherited by child elements. */
+body {
+  background: var(--primary-background-color);
+  color: var(--default-text-color);
+  font-family: var(--default-font-family);
+  font-size: var(--default-font-size);
+  margin: 0;
+}
+
+.outerRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* BUTTONS */
+
+/*
+  These rules gives simplistic styles for buttons inside and outside of forms.
+  A richer web site will likely have multiple styles that are defined
+  by multiple classes. At a minimum, you might have class .primary-button
+  and .secondary-button.
+*/
+
+.button,
+.button:visited {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: var(--primary-color-dark);
+  color: white;
+}
+
+/* LINKS */
+
+/*
+  Some developers choose to make links look like buttons. Technically,
+  links are things you click on that take you to another page, and buttons
+  are things you click on that perform some action (like adding a product
+  to the shopping cart), but the line has become somewhat blurred.
+*/
+
+a,
+a:visited {
+  color: var(--primary-color);
+}
+
+a:hover,
+a:active {
+  color: var(--primary-color-dark);
+}
+
+
+
+.imgSlider .slick-dots {
+  display: flex;
+  position: absolute;
+  left: -50%;
+  bottom: 0;
+}
+
+.imgSlider .slick-dots li {
+  padding: 10px;
+}
+
+.imgSlider .slick-dots li button {
+  opacity: 0;
+}
+
+.imgSlider .slick-dots li {
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #BEBEBE;
+  margin: 5px;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.imgSlider .slick-dots li:before {
+  content: '';
+  background-color: #D9D9D9;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.imgSlider .slick-dots li.slick-active:before {
+  background-color: #E27B00;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.col-half {
+  width: 49%;
+}
+
+.btn {
+  text-align: center;
+  background-color: #0058E5;
+  padding: 16px 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #0953ca;
+  color: #fff;
+}
+
+.btn1 {
+  text-align: center;
+  width: 150px;
+  background-color: #abc9f7;
+  padding: 5px 5px;
+  margin: 10px 10px;
+  color: #154252;
+  text-decoration: none;
+  display:inline;
+  cursor: pointer;
+  border: 1px solid #0099cc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.btn1:hover {
+  background-color: #207eca;
+  color: #fff;
+}
+
+.btn2 {
+  text-align: center;
+  width: 150px;
+  background-color: #ffffff;
+  padding: 5px 5px;
+  margin: 10px 10px;
+  color: #0099cc;
+  text-decoration: none;
+  display:inline;
+  cursor: pointer;
+  border: 1px solid #0099cc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.btn2:hover {
+  background-color: #207eca;
+  color: #fff;
+}
+
+.confirmation-page{
+  text-align: center;
+  margin: 20px auto;
+}
+
+.cart-count{
+  text-align: center;
+}
+
+.cart-icon{
+  text-align: center;
+}

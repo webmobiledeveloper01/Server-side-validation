@@ -1,0 +1,228 @@
+{
+  "categories": [
+    {
+      "categoryId": 1001,
+      "name": "Classics"
+    },
+    {
+      "categoryId": 1002,
+      "name": "Fantasy"
+    },
+    {
+      "categoryId": 1003,
+      "name": "Mystery"
+    },
+    {
+      "categoryId": 1004,
+      "name": "Romance"
+    },
+    {
+      "categoryId": 1005,
+      "name": "Science Fiction"
+    }
+  ],
+  "books": [
+    {
+      "bookId": 1001,
+      "title": "Little Dorrit",
+      "author": "Charles Dickens",
+      "price": 599,
+      "isPublic": true,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1002,
+      "title": "Little Dorrit",
+      "author": "Charles Dickens",
+      "price": 599,
+      "isPublic": true,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1003,
+      "title": "Little Dorrit",
+      "author": "Charles Dickens",
+      "price": 599,
+      "isPublic": true,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1004,
+      "title": "Little Dorrit",
+      "author": "Charles Dickens",
+      "price": 599,
+      "isPublic": true,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1005,
+      "title": "Little Dorrit",
+      "author": "Charles Dickens",
+      "price": 599,
+      "isPublic": true,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1006,
+      "title": "Watership Down",
+      "author": "Richard Adams",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1007,
+      "title": "Watership Down",
+      "author": "Richard Adams",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1008,
+      "title": "Watership Down",
+      "author": "Richard Adams",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1009,
+      "title": "Watership Down",
+      "author": "Richard Adams",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1010,
+      "title": "Watership Down",
+      "author": "Richard Adams",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1011,
+      "title": "The Woman in White",
+      "author": "Wilke Collins",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1012,
+      "title": "The Woman in White",
+      "author": "Wilke Collins",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1013,
+      "title": "The Woman in White",
+      "author": "Wilke Collins",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1014,
+      "title": "The Woman in White",
+      "author": "Wilke Collins",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1015,
+      "title": "The Woman in White",
+      "author": "Wilke Collins",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1016,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austin",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1017,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austin",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1018,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austin",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1019,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austin",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1020,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austin",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1004
+    },
+
+    {
+      "bookId": 1021,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1005
+    },
+
+    {
+      "bookId": 1022,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1005
+    },
+    {
+      "bookId": 1023,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1005
+    },
+    {
+      "bookId": 1024,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1005
+    },
+    {
+      "bookId": 1025,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1005
+    }
+  ]
+}

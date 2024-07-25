@@ -1,0 +1,114 @@
+.book_box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background-color);
+    padding: 1em;
+    gap: 0.25em;
+}
+
+.book_title {
+    font-weight: bold;
+}
+
+.book_author {
+    font-style: italic;
+}
+
+
+.pro_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pro_items .pro-item-inner {
+    margin: 0px;
+}
+
+
+.catList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catList li {
+    width: 33.33%;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.catList li span {
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.catList li span:hover {
+    color: #E27B00;
+}
+
+.catList li span b {
+    color: #828282;
+}
+
+
+
+.headingBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.headingBlock ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.headingBlock ul li {
+    margin-left: 15px;
+}
+
+.headingBlock ul li span {
+    color: #0058E5;
+    text-decoration: none;
+}
+
+.headingBlock ul li span input {
+    width: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.headingBlock ul li span b {
+    color: #828282;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.pagination span {
+    color: #0058E5;
+}
+
+.pagination ul {
+    display: flex;
+}
+
+.pagination li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pagination li.active {
+    color: #E27B00;
+}
